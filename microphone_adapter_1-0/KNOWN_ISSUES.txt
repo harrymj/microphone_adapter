@@ -1,0 +1,2 @@
+Known issues with microphone_adapter_1-0:
+1) Solder mask/paste mask on U2 (5V LDO) is not set by rule due to bad library addition, so the pads are masked over. Addressed in microphone_adapter_1-1-0 and beyond.
