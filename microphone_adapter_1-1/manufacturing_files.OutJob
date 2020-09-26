@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=manufacturing_files.OutJob
 Description=
 TargetOutputMedium=Folder Structure
 VariantName=0
@@ -165,22 +165,22 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\aj6me_radios\projects\microphone_adapter\microphone_adapter_1-1\.\microphone_adapter_1-0-VariantName\
+OutputFilePath3=C:\aj6me_radios\projects\microphone_adapter\microphone_adapter_1-1\.\microphone_adapter_1-1-VariantName_manufacturing\
 ReleaseManaged3=0
 OutputBasePath3=.\
-OutputPathMedia3=='microphone_adapter_1-1-'+VariantName
-OutputPathMediaValue3=='microphone_adapter_1-1-'+VariantName
+OutputPathMedia3==ProjectName+'-'+VariantName+'_manufacturing'
+OutputPathMediaValue3==ProjectName+'-'+VariantName+'_manufacturing'
 OutputPathOutputer3=[Output Type]
 OutputPathOutputerPrefix3=
 OutputPathOutputerValue3=
 OutputFileName3=
-OutputFileNameMulti3=='microphone_adapter_1-1-'+VariantName
+OutputFileNameMulti3==ProjectName+'-'+VariantName
 UseOutputNameForMulti3=0
 OutputFileNameSpecial3=
-OpenOutput3=1
+OpenOutput3=0
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for microphone_adapter_1-1
+OutputBasePath4=Project Outputs for Free Documents
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -219,8 +219,8 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\aj6me_radios\projects\microphone_adapter\microphone_adapter_1-1\.\microphone_adapter_1-0-VariantName\microphone_adapter_1-0-VariantName_schematic.pdf
 OpenOutputs2=1
-RelativeOutputPath3=C:\aj6me_radios\projects\microphone_adapter\microphone_adapter_1-1\.\microphone_adapter_1-0-VariantName\
-OpenOutputs3=1
+RelativeOutputPath3=C:\aj6me_radios\projects\microphone_adapter\microphone_adapter_1-1\.\microphone_adapter_1-1-VariantName_manufacturing\
+OpenOutputs3=0
 AddToProject3=1
 TimestampFolder3=0
 UseOutputName3=0
