@@ -1,2 +1,3 @@
 Known issues with microphone_adapter_1-0:
 1) Solder mask/paste mask on U2 (5V LDO) is not set by rule due to bad library addition, so the pads are masked over. Addressed in microphone_adapter_1-1-0 and beyond.
+2) Edge of 6.35mm audio jack interferes with a feature on the lid of the enclosure (the board mount for the 90 degree board option). Need to move that connector by 2mm.
