@@ -45,3 +45,6 @@ On the two non-connector faces, grounded copper strips are exposed (likely, the 
 
 ### Enclosure
 Vendor selection and prototyping for the enclosure is still ongoing, but will take the form of an aluminum extrusion plus cutout-endplates for the connector faces. Designer is targeting a Trivalent Chromium plating on the enclosure to make it conductive for better connection to the shields of the connectors. When available, manufacturer's drawings will be uploaded.
+
+### Board to Radio Cable
+While a standard 1:1 RJ45 Ethernet cable would work here, due to the pinout standard chosen by the radio's designers, it would twist the MIC signal with the Keypad signal, which is an oscillating square-wave signal at some number of kHz. This injects a decent chunk of noise into the radio. It's advised to make your own 1:1 cables that ensure that least pins 3 and 4 are twisted together.
