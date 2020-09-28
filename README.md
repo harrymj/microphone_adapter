@@ -11,6 +11,11 @@ This project allows simultaneous connection of both a standard handheld micropho
 
 The board above will be housed in an extruded aluminum enclosure with endcaps with custom cutouts for the connectors. The aluminum enclosure will be plated in a conductive material for good EMI shielding.
 
+### Tooling
+This project is designed in Altium Designer. I recognize and apologize that this isn't the most common/portable tool for open-source hardware, but it's the one that I'm the most familiar and comfortable with. Altium provides a [free, no-login web-based viewer](https://www.altium.com/viewer/) that enables viewing/probing the schematics and layout and viewing the 3D model of the finished board. The schematic is also exported as a PDF in the PCBA (assembly) manufacturing outputs folder.
+
+A quick note about version schemes: Traditionally I've used a scheme project_name_x-y-z where x,y,z are integers incrementing from 0. X increments if there's a major architectural change to the project. Y increments if the PCB fab changes (copper/silkscreen/etc). Z changes for different component stuffing options on the same board. X and Y are tracked for the folder in the filenames, and Z is tracked as a 'variant' in the toolchain. As of now, each copper rev is stored in a different folder. If I eventually decide to get more seriously into git and try to manage releases in the tool, that may change. 
+
 ## Implementation
 
 ### Radio Connector Pinout (1:1 to Handheld Mic)
@@ -48,3 +53,6 @@ Vendor selection and prototyping for the enclosure is still ongoing, but will ta
 
 ### Board to Radio Cable
 While a standard 1:1 RJ45 Ethernet cable would work here, due to the pinout standard chosen by the radio's designers, it would twist the MIC signal with the Keypad signal, which is an oscillating square-wave signal at some number of kHz. This injects a decent chunk of noise into the radio. It's advised to make your own 1:1 cables that ensure that least pins 3 and 4 are twisted together.
+
+### Manufacturing Outputs
+Full sets of manufacuring files (ODB++, Gerbers/NC Drill, BOM, pick & place, schematic PDF, and 3d step file) for the PCBs are included in the respective subfolders. As referred to in the introductory note above, there are two types of manufacturing output folders: PCB (bare fab) and PCBA (assembled board). The PCB manufacturing outputs will take the form of microphone_adapter_1-y where y is the copper revision number. PCBA manufacturing outputs will take the form of microphone_adapter_1-y-z where y still represents copper revision number, and z represents component stuffing revision number.
