@@ -1,6 +1,6 @@
 # <div align="center">Microphone Adapter</div>
 
-[Link to project page on AJ6ME Radios Website](https://sites.google.com/aj6me.com/aj6me-radios/microphone-adapter)
+[Link to project page on AJ6ME Radios Website](https://sites.google.com/aj6me.com/aj6me-radios/kw-microphone-adapter)
 
 This project is not affiliated with Kenwood, nor endorsed by them. All references to the TM-D710GA here only indicate the personal radio the author originally designed the project for.
 
@@ -52,7 +52,7 @@ On the two non-connector faces, grounded copper strips are exposed (likely, the 
 Vendor selection and prototyping for the enclosure is still ongoing, but will take the form of an aluminum extrusion plus cutout-endplates for the connector faces. Designer is targeting a Trivalent Chromium plating on the enclosure to make it conductive for better connection to the shields of the connectors. When available, manufacturer's drawings will be uploaded.
 
 ### Board to Radio Cable
-While a standard 1:1 RJ45 Ethernet cable would work here, due to the pinout standard chosen by the radio's designers, it would twist the MIC signal with the Keypad signal, which is an oscillating square-wave signal at some number of kHz. This injects a decent chunk of noise into the radio. It's advised to make your own 1:1 cables that ensure that least pins 3 and 4 are twisted together.
+While a standard 1:1 RJ45 Ethernet cable should work here, the Keypad signal is an oscillating square-wave signal at some number of kHz. This can inject a decent chunk of noise into the radio. Testing is still ongoing to determine the best way to manage this (different pinout cable, standard shielded patch cable, shielded custom pinout patch cable, etc.)
 
 ### Manufacturing Outputs
-Full sets of manufacuring files (ODB++, Gerbers/NC Drill, BOM, pick & place, schematic PDF, and 3d step file) for the PCBs are included in the respective subfolders. As referred to in the introductory note above, there are two types of manufacturing output folders: PCB (bare fab) and PCBA (assembled board). The PCB manufacturing outputs will take the form of microphone_adapter_1-y where y is the copper revision number. PCBA manufacturing outputs will take the form of microphone_adapter_1-y-z where y still represents copper revision number, and z represents component stuffing revision number.
+Full sets of manufacuring files (ODB++, Gerbers/NC Drill, BOM, pick & place, schematic PDF, and 3d step file) for the PCBs are (or will be when complete) included in the respective subfolders. As referred to in the introductory note above, there are two types of manufacturing output folders: PCB (bare fab) and PCBA (assembled board). The PCB manufacturing outputs will take the form of microphone_adapter_1-y where y is the copper revision number. PCBA manufacturing outputs will take the form of microphone_adapter_1-y-z where y still represents copper revision number, and z represents component stuffing revision number.
